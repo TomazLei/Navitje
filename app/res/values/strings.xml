@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Navitje</string>
+    <string name="debelina">Debelina (mm)</string>
+    <string name="dolzina_naslov">Dolžina traku (fi 160)</string>
+    <string name="dolzina_m">%1$s m</string>
+    <string name="velikost">Velikost navitja (mm)</string>
+    <string name="stevilo">Število navitij</string>
+    <string name="rezultat_naslov">Navitje na fi 150/160</string>
+    <string name="vrstica">%1$s mm · %2$s</string>
+    <string name="vrstica_dolzina">%1$s mm · %2$s · %3$s m</string>
+    <string name="ponastavi">Ponastavi</string>
+    <string name="temni_nacin">Temni način</string>
+    <string name="svetli_nacin">Svetli način</string>
+    <string name="sirina">Širina traku (mm)</string>
+    <string name="teza_naslov">Teža (aluminij)</string>
+    <string name="teza_kg">%1$s kg</string>
+    <string name="teza_kg_mm">%1$s kg/mm</string>
+    <string name="mm">mm</string>
+    <string name="napaka_stevilo">Vnesi število, večje od 0</string>
+    <string name="opozorilo_vhod">Velikost navitja je izven tabele (80–710 mm). Uporabljena je skrajna vrstica.</string>
+    <string name="opozorilo_cilj">Izračunana vrednost je izven stolpca fi 150/160 (0,163–5,237). Rezultat je skrajna vrstica.</string>
+</resources>

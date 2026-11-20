@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingStart="16dp" android:paddingEnd="16dp"
+        android:paddingTop="10dp" android:paddingBottom="10dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/debelina" android:textSize="14sp" android:maxLines="1"
+                    android:labelFor="@+id/debelina" />
+                <EditText android:id="@+id/debelina" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="numberDecimal"
+                    android:digits="0123456789.," android:textSize="24sp" android:maxLength="8"
+                    android:imeOptions="actionNext" android:importantForAutofill="no" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/velikost" android:textSize="14sp" android:maxLines="1"
+                    android:labelFor="@+id/velikost" />
+                <EditText android:id="@+id/velikost" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="numberDecimal"
+                    android:digits="0123456789.," android:textSize="24sp" android:maxLength="8"
+                    android:imeOptions="actionNext" android:importantForAutofill="no" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="6dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/stevilo" android:textSize="14sp" android:maxLines="1"
+                    android:labelFor="@+id/stevilo" />
+                <EditText android:id="@+id/stevilo" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="numberDecimal"
+                    android:digits="0123456789.," android:textSize="24sp" android:maxLength="8"
+                    android:imeOptions="actionNext" android:importantForAutofill="no" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/sirina" android:textSize="14sp" android:maxLines="1"
+                    android:labelFor="@+id/sirina" />
+                <EditText android:id="@+id/sirina" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="numberDecimal"
+                    android:digits="0123456789.," android:textSize="24sp" android:maxLength="8"
+                    android:imeOptions="actionDone" android:importantForAutofill="no" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="@string/rezultat_naslov"
+            android:textSize="14sp" />
+        <TextView android:id="@+id/vrstica_nad" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="20sp" android:maxLines="1"
+            android:textColor="?android:attr/textColorSecondary" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:baselineAligned="true">
+            <TextView android:id="@+id/rezultat" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="56sp"
+                android:includeFontPadding="false"
+                android:textStyle="bold" android:textColor="?attr/barvaRezultata" />
+            <TextView android:id="@+id/enota" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginStart="8dp"
+                android:text="@string/mm" android:textSize="24sp" />
+            <TextView android:id="@+id/vrednost" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginStart="16dp"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <TextView android:id="@+id/vrstica_pod" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="20sp" android:maxLines="1"
+            android:textColor="?android:attr/textColorSecondary" />
+        <TextView android:id="@+id/opozorilo" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="6dp"
+            android:textSize="14sp" android:textColor="?attr/barvaOpozorila" android:visibility="gone" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/dolzina_naslov" android:textSize="14sp" android:maxLines="1" />
+                <TextView android:id="@+id/dolzina" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="28sp" android:maxLines="1"
+                    android:textStyle="bold" android:textColor="?attr/barvaRezultata" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/teza_naslov" android:textSize="14sp" android:maxLines="1" />
+                <TextView android:id="@+id/teza" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="28sp" android:maxLines="1"
+                    android:textStyle="bold" android:textColor="?attr/barvaRezultata" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

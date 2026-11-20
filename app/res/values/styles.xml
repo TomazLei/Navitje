@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#E08A00</color>
+    <color name="primary_dark">#B36E00</color>
+    <color name="primary_light">#FFB74D</color>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/primary</item>
+        <item name="barvaRezultata">@color/primary_dark</item>
+        <item name="barvaOpozorila">#B00020</item>
+    </style>
+    <style name="AppTheme.Dark" parent="@android:style/Theme.Material">
+        <item name="android:colorPrimary">@color/primary_dark</item>
+        <item name="android:colorPrimaryDark">#000000</item>
+        <item name="android:colorAccent">@color/primary_light</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="barvaRezultata">@color/primary_light</item>
+        <item name="barvaOpozorila">#FF8A80</item>
+    </style>
+</resources>
